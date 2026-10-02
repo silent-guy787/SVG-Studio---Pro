@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>SVG Studio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iLTEwIC01IDEwMzQgMTAzNCIgdmVyc2lvbj0iMS4xIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9Im1hdGVyaWFsUHJpbWFyeSIgeDE9IjI1MCIgeTE9IjE2MCIgeDI9Ijc4MCIgeTI9Ijg1MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM2NzUwQTQiLz48c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iIzVFNEE5RSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzRGMzc4QiIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJtYXRlcmlhbEhpZ2hsaWdodCIgY3g9IjMyJSIgY3k9IjIyJSIgcj0iNzglIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZGRkZGIiBzdG9wLW9wYWNpdHk9IjAuMTYiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIgc3RvcC1vcGFjaXR5PSIwLjA0Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZGRkZGIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxtYXNrIGlkPSJzaGFwZU1hc2siPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01MDAgMTc2cS0zOCAwIC02OSAyMXQtNDYgNTZxLTEwIDIzIC0xMCA0OHEtMTcgLTE4IC00MCAtMjdxLTM1IC0xNSAtNzEuNSAtNy41dC02NCAzNC41dC0zNC41IDYzLjV0NyA3Mi41cTEwIDIyIDI4IDQwcS0yNSAwIC00OCA5cS0zNiAxNSAtNTYuNSA0NnQtMjAuNSA2OS41dDIwLjUgNjkuNXQ1Ni41IDQ1cTIzIDEwIDQ3IDEwcS0xNyAxOCAtMjcgNDBxLTE0IDM2IC03IDcyLjV0MzQuNSA2My41dDY0IDM0LjV0NzEuNSAtNy41cTIzIC0xMCA0MCAtMjdxMCAyNSAxMCA0OHExNSAzNSA0NiA1NS41dDY5IDIwLjV0NjkgLTIwLjV0NDYgLTU1LjVxMTAgLTIzIDEwIC00OHExNyAxNyA0MCAyN3EzNSAxNSA3MS41IDcuNXQ2NCAtMzQuNXQzNC41IC02My41dC03IC03Mi41cS0xMCAtMjMgLTI3IC00MHEyNCAwIDQ3IC05cTM2IC0xNSA1Ni41IC00NnQyMC41IC02OS41dC0yMC41IC02OS41dC01Ni41IC00NnEtMjMgLTkgLTQ3IC05cTE3IC0xOCAyNyAtNDBxMTQgLTM2IDcgLTcyLjV0LTM0LjUgLTYzLjV0LTY0IC0zNC41dC03MS41IDcuNXEtMjMgOSAtNDEgMjdxMSAtMjUgLTkgLTQ4cS0xNSAtMzUgLTQ2IC01NnQtNjkgLTIxek01MDAgMjMzcTIwIDAgMzcuNSAxMnQyNSAzMC41dDMuNSAzOC41dC0xOCAzNXYxMzdsOTcgLTk3cTAgLTIxIDExLjUgLTM4dDMwIC0yNC41dDM5IC0zLjV0MzQuNSAxOHQxOCAzNC41dC0zLjUgMzkuNXQtMjQuNSAzMHQtMzcgMTFsLTk4IDk4aDEzOHExNCAtMTUgMzQgLTE5dDM5IDR0MzAuNSAyNS41dDExLjUgMzd0LTExLjUgMzd0LTMwIDI1dC0zOSAzLjV0LTM0LjUgLTE4aC0xMzhsOTggOThxMjAgMCAzNyAxMXQyNC41IDI5LjV0My41IDM5LjV0LTE4IDM1dC0zNC41IDE4dC0zOSAtNHQtMzAgLTI1dC0xMS41IC0zN2wtOTcgLTk4djEzOHExNCAxNSAxOCAzNXQtMy41IDM4LjV0LTI1IDMwdC0zNy41IDExLjV0LTM3LjUgLTExLjV0LTI1IC0zMHQtMy41IC0zOC41dDE4IC0zNXYtMTM4bC05NyA5OHEwIDIxIC0xMS41IDM3LjV0LTMwIDI0LjV0LTM5IDR0LTM0LjUgLTE4dC0xOCAtMzV0My41IC0zOS41dDI0LjUgLTI5LjV0MzcgLTExbDk4IC05OGgtMTM4cS0xNCAxNCAtMzQuNSAxOHQtMzkgLTMuNXQtMzAgLTI1dC0xMS41IC0zN3QxMS41IC0zN3QzMC41IC0yNS41dDM5IC00dDM0IDE5aDEzOGwtOTggLTk4cS0yMCAwIC0zNyAtMTF0LTI0LjUgLTMwdC0zLjUgLTM5LjV0MTggLTM0LjV0MzQuNSAtMTh0MzkgMy41dDMwIDI0LjV0MTEuNSAzOGw5NyA5N3YtMTM4cS0xNCAtMTQgLTE4IC0zNHQzLjUgLTM4LjV0MjUgLTMwLjV0MzcuNSAtMTJ6Ii8+PC9tYXNrPjwvZGVmcz48ZyBtYXNrPSJ1cmwoI3NoYXBlTWFzaykiPjxyZWN0IHg9Ii0xMCIgeT0iLTUiIHdpZHRoPSIxMDM0IiBoZWlnaHQ9IjEwMzQiIGZpbGw9InVybCgjbWF0ZXJpYWxQcmltYXJ5KSIvPjxyZWN0IHg9Ii0xMCIgeT0iLTUiIHdpZHRoPSIxMDM0IiBoZWlnaHQ9IjEwMzQiIGZpbGw9InVybCgjbWF0ZXJpYWxIaWdobGlnaHQpIi8+PC9nPjwvc3ZnPg==">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap">
+
+    <!-- CodeMirror (script only; its stylesheet is inlined below) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"></script>
+
+    <style>
+/* BASICS */
+
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: monospace;
+  height: 300px;
+  color: black;
+  direction: ltr;
+}
+
+/* PADDING */
+
+.CodeMirror-lines {
+  padding: 4px 0; /* Vertical padding around content */
+}
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
+  padding: 0 4px; /* Horizontal padding of content */
+}
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: white; /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+}
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: #999; }
+
+/* CURSOR */
+
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0;
+}
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+.cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7;
+}
+.cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1;
+}
+.cm-fat-cursor .CodeMirror-line::selection,
+.cm-fat-cursor .CodeMirror-line > span::selection, 
+.cm-fat-cursor .CodeMirror-line > span > span::selection { background: transparent; }
+.cm-fat-cursor .CodeMirror-line::-moz-selection,
+.cm-fat-cursor .CodeMirror-line > span::-moz-selection,
+.cm-fat-cursor .CodeMirror-line > span > span::-moz-selection { background: transparent; }
+.cm-fat-cursor { caret-color: transparent; }
+@-moz-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@-webkit-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+
+/* Can style cursor different in overwrite (non-insert) mode */
+.CodeMirror-overwrite .CodeMirror-cursor {}
+
+.cm-tab { display: inline-block; text-decoration: inherit; }
+
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0; right: 0; top: -50px; bottom: 0;
+  overflow: hidden;
+}
+.CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0; bottom: 0;
+  position: absolute;
+}
+
+/* DEFAULT THEME */
+
+.cm-s-default .cm-header {color: blue;}
+.cm-s-default .cm-quote {color: #090;}
+.cm-negative {color: #d44;}
+.cm-positive {color: #292;}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-link {text-decoration: underline;}
+.cm-strikethrough {text-decoration: line-through;}
+
+.cm-s-default .cm-keyword {color: #708;}
+.cm-s-default .cm-atom {color: #219;}
+.cm-s-default .cm-number {color: #164;}
+.cm-s-default .cm-def {color: #00f;}
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+.cm-s-default .cm-variable-2 {color: #05a;}
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}
+.cm-s-default .cm-comment {color: #a50;}
+.cm-s-default .cm-string {color: #a11;}
+.cm-s-default .cm-string-2 {color: #f50;}
+.cm-s-default .cm-meta {color: #555;}
+.cm-s-default .cm-qualifier {color: #555;}
+.cm-s-default .cm-builtin {color: #30a;}
+.cm-s-default .cm-bracket {color: #997;}
+.cm-s-default .cm-tag {color: #170;}
+.cm-s-default .cm-attribute {color: #00c;}
+.cm-s-default .cm-hr {color: #999;}
+.cm-s-default .cm-link {color: #00c;}
+
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
+
+.CodeMirror-composing { border-bottom: 2px solid; }
+
+/* Default styles for common addons */
+
+div.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
+.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
+.CodeMirror-activeline-background {background: #e8f2ff;}
+
+/* STOP */
+
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+
+.CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.CodeMirror-scroll {
+  overflow: scroll !important; /* Things will break if this is overridden */
+  /* 50px is the magic margin used to hide the element's real scrollbars */
+  /* See overflow: hidden in .CodeMirror */
+  margin-bottom: -50px; margin-right: -50px;
+  padding-bottom: 50px;
+  height: 100%;
+  outline: none; /* Prevent dragging from highlighting the element */
+  position: relative;
+  z-index: 0;
+}
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 50px solid transparent;
+}
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actual scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+  outline: none;
+}
+.CodeMirror-vscrollbar {
+  right: 0; top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.CodeMirror-hscrollbar {
+  bottom: 0; left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.CodeMirror-scrollbar-filler {
+  right: 0; bottom: 0;
+}
+.CodeMirror-gutter-filler {
+  left: 0; bottom: 0;
+}
+
+.CodeMirror-gutters {
+  position: absolute; left: 0; top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -50px;
+}
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important;
+}
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0; bottom: 0;
+  z-index: 4;
+}
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+.CodeMirror-gutter-wrapper ::selection { background-color: transparent }
+.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }
+
+.CodeMirror-lines {
+  cursor: text;
+  min-height: 1px; /* prevents collapsing before first draw */
+}
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
+  /* Reset some styles that the rest of the page might have set */
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+}
+.CodeMirror-wrap pre.CodeMirror-line,
+.CodeMirror-wrap pre.CodeMirror-line-like {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 0;
+}
+
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  padding: 0.1px; /* Force widget margins to stay inside of the container */
+}
+
+.CodeMirror-widget {}
+
+.CodeMirror-rtl pre { direction: rtl; }
+
+.CodeMirror-code {
+  outline: none;
+}
+
+/* Force content-box sizing for the elements where we expect it */
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+.CodeMirror-measure pre { position: static; }
+
+div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+
+.CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible;
+}
+
+.CodeMirror-selected { background: #d9d9d9; }
+.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
+.CodeMirror-crosshair { cursor: crosshair; }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }
+
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, .4);
+}
+
+/* Used to force a border model for a node */
+.cm-force-border { padding-right: .1px; }
+
+@media print {
+  /* Hide the cursor when printing */
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+
+/* See issue #2901 */
+.cm-tab-wrap-hack:after { content: ''; }
+
+/* Help users use markselection to safely style text background */
+span.CodeMirror-selectedtext { background: none; }
+
+    </style>
+
+    <style>
+        /* ============ Material 3 design tokens ============ */
+        :root {
+            color-scheme: light;
+            --font: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            --mono: 'Roboto Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+            --primary: #4A55C9;
+            --on-primary: #FFFFFF;
+            --primary-container: #E0E0FF;
+            --on-primary-container: #00105C;
+            --secondary-container: #E1E0F9;
+            --on-secondary-container: #1A1A2C;
+            --tertiary: #8A4A72;
+            --success: #1F6B49;
+
+            --surface: #FBF8FF;
+            --surface-lowest: #FFFFFF;
+            --surface-low: #F4F2FA;
+            --surface-container: #EEECF4;
+            --surface-high: #E8E6EE;
+            --surface-highest: #E3E1E9;
+            --on-surface: #1B1B21;
+            --on-surface-variant: #46464F;
+            --outline: #777680;
+            --outline-variant: #C7C5D0;
+            --inverse-surface: #303036;
+            --inverse-on-surface: #F2EFF7;
+
+            --shape-sm: 8px;
+            --shape-md: 12px;
+            --shape-lg: 16px;
+            --shape-xl: 28px;
+            --ease: cubic-bezier(0.2, 0, 0, 1);
+
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                color-scheme: dark;
+                --primary: #BBC3FF;
+                --on-primary: #0A2190;
+                --primary-container: #303CAE;
+                --on-primary-container: #E0E0FF;
+                --secondary-container: #444559;
+                --on-secondary-container: #E1E0F9;
+                --tertiary: #EFB8D7;
+                --success: #8FD8B0;
+                --surface: #121318;
+                --surface-lowest: #0D0E13;
+                --surface-low: #1B1B21;
+                --surface-container: #1F1F25;
+                --surface-high: #292A2F;
+                --surface-highest: #34343A;
+                --on-surface: #E4E1E9;
+                --on-surface-variant: #C7C5D0;
+                --outline: #918F9A;
+                --outline-variant: #46464F;
+                --inverse-surface: #E4E1E9;
+                --inverse-on-surface: #303036;
+            }
+        }
+
+        :root[data-theme="dark"] {
+            color-scheme: dark;
+            --primary: #BBC3FF;
+            --on-primary: #0A2190;
+            --primary-container: #303CAE;
+            --on-primary-container: #E0E0FF;
+            --secondary-container: #444559;
+            --on-secondary-container: #E1E0F9;
+            --tertiary: #EFB8D7;
+            --success: #8FD8B0;
+            --surface: #121318;
+            --surface-lowest: #0D0E13;
+            --surface-low: #1B1B21;
+            --surface-container: #1F1F25;
+            --surface-high: #292A2F;
+            --surface-highest: #34343A;
+            --on-surface: #E4E1E9;
+            --on-surface-variant: #C7C5D0;
+            --outline: #918F9A;
+            --outline-variant: #46464F;
+            --inverse-surface: #E4E1E9;
+            --inverse-on-surface: #303036;
+        }
+
+        html { scroll-padding-top: env(safe-area-inset-top, 0px); height: 100%; }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            height: 100%;
+            font-family: var(--font);
+            background-color: var(--surface);
+            color: var(--on-surface);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        svg.i { width: 24px; height: 24px; fill: currentColor; flex-shrink: 0; display: block; }
+
+        /* ============ Buttons / state layers ============ */
+        .btn, .icon-btn, .chip {
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            font-family: var(--font);
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: box-shadow 0.2s var(--ease), background-color 0.2s var(--ease);
+        }
+        .btn::before, .icon-btn::before, .chip::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: currentColor;
+            opacity: 0;
+            transition: opacity 0.15s var(--ease);
+            z-index: -1;
+        }
+        .btn:hover::before, .icon-btn:hover::before, .chip:hover::before { opacity: 0.08; }
+        .btn:focus-visible::before, .icon-btn:focus-visible::before, .chip:focus-visible::before { opacity: 0.12; }
+        .btn:active::before, .icon-btn:active::before, .chip:active::before { opacity: 0.12; }
+        .btn:focus-visible, .icon-btn:focus-visible, .chip:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        .btn {
+            height: 40px;
+            padding: 0 24px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            gap: 8px;
+        }
+        .btn.has-icon { padding: 0 24px 0 16px; }
+        .btn .i { width: 18px; height: 18px; }
+        .btn-filled { background: var(--primary); color: var(--on-primary); }
+        .btn-filled:hover { box-shadow: 0 1px 3px 1px rgba(0,0,0,.18), 0 1px 2px rgba(0,0,0,.25); }
+        .btn-tonal { background: var(--secondary-container); color: var(--on-secondary-container); }
+        .btn-tonal:hover { box-shadow: 0 1px 3px 1px rgba(0,0,0,.14), 0 1px 2px rgba(0,0,0,.2); }
+
+        .icon-btn {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: transparent;
+            color: var(--on-surface-variant);
+        }
+        .icon-btn.sm { width: 32px; height: 32px; }
+        .icon-btn.sm .i { width: 20px; height: 20px; }
+
+        .chip {
+            height: 32px;
+            padding: 0 14px 0 8px;
+            gap: 8px;
+            border-radius: var(--shape-sm);
+            background: transparent;
+            color: var(--on-surface-variant);
+            border: 1px solid var(--outline-variant);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            flex-shrink: 0;
+        }
+        .chip .i { width: 18px; height: 18px; color: var(--primary); }
+        .chip.selected {
+            background: var(--secondary-container);
+            color: var(--on-secondary-container);
+            border-color: transparent;
+        }
+
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: currentColor;
+            opacity: 0.2;
+            transform: scale(0);
+            animation: ripple 0.55s var(--ease) forwards;
+            pointer-events: none;
+            z-index: -1;
+        }
+        @keyframes ripple { to { transform: scale(1); opacity: 0; } }
+
+        /* ============ Top app bar ============ */
+        header {
+            min-height: 64px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 8px 16px 8px 20px;
+            background: var(--surface);
+        }
+        .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+        .logo-box {
+            width: 40px; height: 40px;
+            border-radius: var(--shape-md);
+            background: var(--primary-container);
+            color: var(--on-primary-container);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .brand-text { display: flex; flex-direction: column; min-width: 0; }
+        .brand h1 { font-size: 22px; line-height: 28px; font-weight: 400; color: var(--on-surface); }
+        .brand small { font-size: 12px; line-height: 16px; letter-spacing: 0.4px; color: var(--on-surface-variant); margin-top: -2px; }
+
+        .actions { display: flex; align-items: center; gap: 8px; }
+
+        .stats {
+            display: inline-flex; align-items: center; gap: 8px;
+            height: 32px; padding: 0 12px;
+            margin-right: 4px;
+            border-radius: var(--shape-sm);
+            background: var(--surface-container);
+            font-size: 12px; font-weight: 500;
+            color: var(--on-surface-variant);
+            letter-spacing: 0.5px;
+        }
+        .stats b { font-family: var(--mono); font-weight: 500; font-size: 13px; color: var(--on-surface); letter-spacing: 0; }
+
+        svg.i.i-sun { display: none; }
+        svg.i.i-moon { display: block; }
+        :root[data-theme="dark"] svg.i.i-sun { display: block; }
+        :root[data-theme="dark"] svg.i.i-moon { display: none; }
+
+        /* Logo as a subtle home/reload button */
+        .logo-btn {
+            border: none; font: inherit; cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .logo-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+        /* Download dropdown */
+        .menu-wrap { position: relative; }
+        .menu-wrap .chev { width: 18px; height: 18px; margin-left: -2px; transition: transform 0.2s var(--ease); }
+        .menu-wrap.open .chev { transform: rotate(180deg); }
+        .menu {
+            position: absolute; right: 0; top: calc(100% + 6px);
+            min-width: 176px; padding: 8px 0;
+            background: var(--surface-container);
+            border-radius: var(--shape-md);
+            box-shadow: 0 2px 6px 2px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.3);
+            opacity: 0; transform: translateY(-4px) scale(0.98); transform-origin: top right;
+            pointer-events: none; visibility: hidden;
+            transition: opacity 0.15s var(--ease), transform 0.15s var(--ease), visibility 0.15s;
+            z-index: 60;
+        }
+        .menu-wrap.open .menu { opacity: 1; transform: none; pointer-events: auto; visibility: visible; }
+        .menu-item {
+            display: flex; align-items: center; gap: 12px; width: 100%;
+            height: 48px; padding: 0 16px;
+            background: transparent; border: none; cursor: pointer;
+            font-family: var(--font); font-size: 14px; font-weight: 500; letter-spacing: 0.1px;
+            color: var(--on-surface); text-align: left;
+        }
+        .menu-item:hover, .menu-item:focus-visible { background: color-mix(in srgb, var(--on-surface) 8%, transparent); outline: none; }
+        .menu-item .i { width: 20px; height: 20px; color: var(--primary); }
+        .menu-item:disabled { opacity: 0.38; cursor: not-allowed; background: transparent !important; }
+        .placeholder.wide { width: min(380px, 100%); }
+        .placeholder .hint2 { font-size: 12px; opacity: 0.75; line-height: 18px; }
+        .engine-badge {
+            position: absolute; left: 12px; bottom: 12px; z-index: 2;
+            display: none; align-items: center; gap: 6px;
+            max-width: calc(100% - 24px); padding: 6px 12px;
+            border-radius: var(--shape-sm);
+            background: var(--surface-container); color: var(--on-surface-variant);
+            font-size: 12px; font-weight: 500; letter-spacing: 0.4px;
+            cursor: default; user-select: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .engine-badge.show { display: flex; }
+        .engine-badge .i { width: 14px; height: 14px; color: var(--primary); }
+        .menu-note { display: none; padding: 4px 16px 8px; font-size: 12px; letter-spacing: 0.4px; color: var(--on-surface-variant); }
+        .menu.is-empty .menu-note { display: block; }
+
+        /* Resizer */
+        .resizer {
+            position: relative; cursor: col-resize; touch-action: none;
+            display: flex; align-items: center; justify-content: center;
+            outline: none; -webkit-tap-highlight-color: transparent;
+        }
+        .resizer::before { content: ""; position: absolute; inset: 0 -6px; }
+        .resizer .grip {
+            width: 4px; height: 48px; border-radius: 2px;
+            background: var(--outline);
+            opacity: 0.25;
+            transition: opacity 0.2s var(--ease), background-color 0.2s var(--ease), height 0.2s var(--ease);
+        }
+        .resizer:hover .grip, .resizer:focus-visible .grip { opacity: 0.8; height: 64px; }
+        .resizer.active .grip { opacity: 1; background: var(--primary); height: 64px; }
+        .resizer.snapped .grip { width: 6px; height: 72px; opacity: 1; background: var(--primary); }
+        .mid-mark {
+            position: absolute; top: 4px; bottom: 16px; left: 50%;
+            width: 0; border-left: 2px dashed var(--outline);
+            transform: translateX(-1px);
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.15s var(--ease), border-color 0.15s var(--ease);
+        }
+        .resizer.active ~ .mid-mark { opacity: 0.5; }
+        .resizer.active.snapped ~ .mid-mark { opacity: 1; border-color: var(--primary); }
+        body.resizing { cursor: col-resize; user-select: none; -webkit-user-select: none; }
+        body.resizing .CodeMirror, body.resizing .canvas { pointer-events: none; }
+
+        /* Drop overlay + modal */
+        #dropOverlay {
+            position: fixed; inset: 0; z-index: 80;
+            display: flex; align-items: center; justify-content: center;
+            background: color-mix(in srgb, var(--surface) 75%, transparent);
+            opacity: 0; pointer-events: none; transition: opacity 0.15s var(--ease);
+        }
+        #dropOverlay.show { opacity: 1; }
+        #dropOverlay .drop-box {
+            display: flex; flex-direction: column; align-items: center; gap: 8px;
+            padding: 40px 56px; border-radius: var(--shape-xl);
+            border: 2px dashed var(--primary);
+            background: var(--primary-container); color: var(--on-primary-container);
+            font-size: 16px; font-weight: 500;
+        }
+        #dropOverlay .drop-box small { font-size: 13px; font-weight: 400; opacity: 0.85; }
+        #dropOverlay .drop-box .i { width: 36px; height: 36px; }
+
+        #dropModal {
+            position: fixed; inset: 0; z-index: 90;
+            display: none; align-items: center; justify-content: center; padding: 16px;
+            background: rgba(0,0,0,.4);
+        }
+        #dropModal.show { display: flex; }
+        .dialog {
+            width: 100%; max-width: 360px; padding: 24px;
+            background: var(--surface-high); color: var(--on-surface);
+            border-radius: var(--shape-xl);
+            box-shadow: 0 6px 16px rgba(0,0,0,.3);
+        }
+        .dialog h2 { font-size: 24px; line-height: 32px; font-weight: 400; margin-bottom: 16px; }
+        .dialog p { font-size: 14px; line-height: 20px; letter-spacing: 0.25px; color: var(--on-surface-variant); }
+        .dialog p b { color: var(--on-surface); font-weight: 500; word-break: break-all; }
+        .dialog .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 24px; }
+        .btn-text { background: transparent; color: var(--primary); padding: 0 12px; }
+
+        /* ============ Layout ============ */
+        main {
+            flex: 1;
+            min-height: 0;
+            display: grid;
+            --split: 0.5;
+            position: relative;
+            --left: 1fr;
+            --right: 1fr;
+            grid-template-columns: minmax(0, var(--left)) 16px minmax(0, var(--right));
+            gap: 0;
+            padding: 4px 16px 16px;
+        }
+
+        .panel-container {
+            min-width: 0;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            background: var(--surface-low);
+            border-radius: var(--shape-xl);
+            overflow: hidden;
+        }
+
+        .label-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 16px 20px 4px 20px;
+            min-height: 48px;
+        }
+        .label {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: 0.15px;
+            color: var(--on-surface);
+            white-space: nowrap;
+        }
+        .label .i { width: 20px; height: 20px; color: var(--primary); }
+        .hint { font-size: 12px; letter-spacing: 0.4px; color: var(--on-surface-variant); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+        .toolbar {
+            display: flex; align-items: center; gap: 8px;
+            padding: 8px 16px 12px 16px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .toolbar::-webkit-scrollbar { display: none; }
+        .tool-group { display: flex; gap: 8px; }
+        .spacer { flex: 1; }
+
+        .panel {
+            flex: 1;
+            min-height: 0;
+            margin: 0 8px 8px;
+            background: var(--surface-lowest);
+            border: 1px solid var(--outline-variant);
+            border-radius: var(--shape-lg);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ============ Editor (CodeMirror, Material theme) ============ */
+        .CodeMirror {
+            position: absolute;
+            inset: 0;
+            height: auto;
+            width: 100%;
+            background: transparent !important;
+            color: var(--on-surface);
+            font-family: var(--mono);
+            font-size: 13.5px;
+            line-height: 1.65;
+        }
+        .cm-s-m3 .CodeMirror-gutters { background: transparent !important; border-right: 1px solid var(--outline-variant) !important; }
+        .cm-s-m3 .CodeMirror-linenumber { color: var(--outline) !important; padding: 0 12px 0 8px; }
+        .cm-s-m3 .CodeMirror-cursor { border-left: 2px solid var(--primary); }
+        .cm-s-m3 div.CodeMirror-selected,
+        .cm-s-m3.CodeMirror-focused div.CodeMirror-selected { background: var(--primary-container); }
+        .cm-s-m3 .CodeMirror-line::selection, .cm-s-m3 .CodeMirror-line > span::selection, .cm-s-m3 .CodeMirror-line > span > span::selection { background: var(--primary-container); }
+        .cm-s-m3 .cm-tag { color: var(--primary); }
+        .cm-s-m3 .cm-attribute { color: var(--tertiary); }
+        .cm-s-m3 .cm-string { color: var(--success); }
+        .cm-s-m3 .cm-comment { color: var(--outline); font-style: italic; }
+        .cm-s-m3 .cm-meta { color: var(--outline); }
+        .cm-s-m3 .cm-bracket { color: var(--on-surface-variant); }
+        .cm-s-m3 .cm-atom { color: var(--tertiary); }
+        .cm-s-m3 .cm-error { color: #B3261E; }
+        .CodeMirror-scroll { scrollbar-width: thin; scrollbar-color: var(--outline-variant) transparent; }
+        .CodeMirror-empty { color: var(--outline); }
+
+        /* ============ Preview canvas ============ */
+        .canvas {
+            --ph: #49454F;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px;
+            cursor: grab;
+            overflow: hidden;
+            transition: background-color 0.3s var(--ease);
+        }
+        .canvas:active { cursor: grabbing; }
+        .canvas.is-solid { --ph: #CAC4D0; }
+
+        .checkerboard {
+            background-image: linear-gradient(45deg, #e5e7eb 25%, transparent 25%),
+                              linear-gradient(-45deg, #e5e7eb 25%, transparent 25%),
+                              linear-gradient(45deg, transparent 75%, #e5e7eb 75%),
+                              linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            background-color: #f3f4f6;
+        }
+
+        #preview-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 18px 20px rgb(0 0 0 / 0.14));
+        }
+        #preview-container svg { max-width: 100%; max-height: 100%; height: auto; width: auto; }
+
+        .placeholder {
+            text-align: center;
+            color: var(--ph);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            pointer-events: none;
+            width: 260px;
+            filter: none;
+        }
+        .placeholder .badge {
+            width: 72px; height: 72px;
+            border-radius: 50%;
+            background: var(--primary-container);
+            color: var(--on-primary-container);
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 8px;
+        }
+        .placeholder .badge .i { width: 32px; height: 32px; }
+        .placeholder p { font-size: 16px; font-weight: 500; }
+        .placeholder span.sub { font-size: 13px; opacity: 0.85; margin-bottom: 12px; }
+        .placeholder .btn { pointer-events: auto; }
+
+        .zoom-control {
+            display: flex; align-items: center; gap: 4px;
+            height: 32px;
+            padding: 0 12px 0 2px;
+            border-radius: 16px;
+            background: var(--surface-container);
+            flex-shrink: 0;
+        }
+        .zoom-control .icon-btn { color: var(--primary); }
+
+        .zoom-control input[type="range"] {
+            -webkit-appearance: none; appearance: none;
+            width: 140px; height: 20px;
+            background: transparent;
+            cursor: pointer;
+            --p: 18.4%;
+        }
+        .zoom-control input[type="range"]::-webkit-slider-runnable-track {
+            height: 4px; border-radius: 2px;
+            background: linear-gradient(to right, var(--primary) var(--p), var(--outline-variant) var(--p));
+        }
+        .zoom-control input[type="range"]::-moz-range-track {
+            height: 4px; border-radius: 2px;
+            background: linear-gradient(to right, var(--primary) var(--p), var(--outline-variant) var(--p));
+        }
+        .zoom-control input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px; height: 16px; margin-top: -6px;
+            border-radius: 50%; border: none;
+            background: var(--primary);
+            box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 16%, transparent);
+            transition: box-shadow 0.15s var(--ease);
+        }
+        .zoom-control input[type="range"]::-moz-range-thumb {
+            width: 16px; height: 16px;
+            border-radius: 50%; border: none;
+            background: var(--primary);
+        }
+        .zoom-control input[type="range"]:hover::-webkit-slider-thumb,
+        .zoom-control input[type="range"]:focus-visible::-webkit-slider-thumb {
+            box-shadow: 0 0 0 8px color-mix(in srgb, var(--primary) 16%, transparent);
+        }
+        .zoom-control input[type="range"]:focus-visible { outline: none; }
+
+        .zoom-label {
+            font-size: 12px; font-weight: 500;
+            color: var(--on-surface-variant);
+            min-width: 38px; text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ============ Snackbar ============ */
+        #toast {
+            position: fixed;
+            left: 50%;
+            bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+            transform: translate(-50%, 16px);
+            background: var(--inverse-surface);
+            color: var(--inverse-on-surface);
+            padding: 14px 20px;
+            min-width: 200px;
+            text-align: left;
+            border-radius: 4px;
+            font-size: 14px; letter-spacing: 0.25px;
+            box-shadow: 0 3px 6px rgba(0,0,0,.25), 0 6px 14px rgba(0,0,0,.2);
+            opacity: 0;
+            transition: opacity 0.2s var(--ease), transform 0.25s var(--ease);
+            pointer-events: none;
+            z-index: 100;
+        }
+        .show-toast { opacity: 1 !important; transform: translate(-50%, 0) !important; }
+
+        /* ============ Responsive ============ */
+        @media (max-width: 860px) {
+            main {
+                grid-template-columns: minmax(0, 1fr);
+                grid-auto-rows: minmax(440px, auto);
+                overflow-y: auto;
+                gap: 12px;
+            }
+            .resizer, .mid-mark { display: none; }
+            .panel-container { min-height: 440px; }
+            .hint { display: none; }
+        }
+        @media (max-width: 620px) {
+            header { padding: 8px 8px 8px 16px; }
+            .brand small, .stats .stats-label { display: none; }
+            .btn-label { display: none; }
+            .btn.has-icon { width: 40px; padding: 0; }
+            .menu-wrap .chev { display: none; }
+            .btn .i { width: 20px; height: 20px; }
+            .canvas { padding: 24px; }
+            main { padding: 4px 8px 12px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <button type="button" class="logo-box logo-btn" id="logoBtn" title="Reload" aria-label="Reload SVG Studio">
+                <svg width="22" height="22" viewBox="-10 -5 1034 1034" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M500 176q-38 0 -69 21t-46 56q-10 23 -10 48q-17 -18 -40 -27q-35 -15 -71.5 -7.5t-64 34.5t-34.5 63.5t7 72.5q10 22 28 40q-25 0 -48 9q-36 15 -56.5 46t-20.5 69.5t20.5 69.5t56.5 45q23 10 47 10q-17 18 -27 40q-14 36 -7 72.5t34.5 63.5t64 34.5t71.5 -7.5q23 -10 40 -27q0 25 10 48q15 35 46 55.5t69 20.5t69 -20.5t46 -55.5q10 -23 10 -48q17 17 40 27q35 15 71.5 7.5t64 -34.5t34.5 -63.5t-7 -72.5q-10 -23 -27 -40q24 0 47 -9q36 -15 56.5 -46t20.5 -69.5t-20.5 -69.5t-56.5 -46q-23 -9 -47 -9q17 -18 27 -40q14 -36 7 -72.5t-34.5 -63.5t-64 -34.5t-71.5 7.5q-23 9 -41 27q1 -25 -9 -48q-15 -35 -46 -56t-69 -21zM500 233q20 0 37.5 12t25 30.5t3.5 38.5t-18 35v137l97 -97q0 -21 11.5 -38t30 -24.5t39 -3.5t34.5 18t18 34.5t-3.5 39.5t-24.5 30t-37 11l-98 98h138q14 -15 34 -19t39 4t30.5 25.5t11.5 37t-11.5 37t-30 25t-39 3.5t-34.5 -18h-138l98 98q20 0 37 11t24.5 29.5t3.5 39.5t-18 35t-34.5 18t-39 -4t-30 -25t-11.5 -37l-97 -98v138q14 15 18 35t-3.5 38.5t-25 30t-37.5 11.5t-37.5 -11.5t-25 -30t-3.5 -38.5t18 -35v-138l-97 98q0 21 -11.5 37.5t-30 24.5t-39 4t-34.5 -18t-18 -35t3.5 -39.5t24.5 -29.5t37 -11l98 -98h-138q-14 14 -34.5 18t-39 -3.5t-30 -25t-11.5 -37t11.5 -37t30.5 -25.5t39 -4t34 19h138l-98 -98q-20 0 -37 -11t-24.5 -30t-3.5 -39.5t18 -34.5t34.5 -18t39 3.5t30 24.5t11.5 38l97 97v-138q-14 -14 -18 -34t3.5 -38.5t25 -30.5t37.5 -12z"/>
+                </svg>
+            </button>
+            <div class="brand-text">
+                <h1>SVG Studio</h1>
+                <small>Professional previewer</small>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="stats">
+                <span class="stats-label">Size</span> <b id="byteCount">0 B</b>
+            </div>
+            <button class="icon-btn" id="themeToggle" title="Toggle light / dark theme" aria-label="Toggle light or dark theme">
+                <svg class="i i-moon" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+                <svg class="i i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M11 1h2v3h-2zM11 20h2v3h-2zM1 11h3v2H1zM20 11h3v2h-3zM4.22 5.64l1.42-1.42 2.12 2.12-1.42 1.42zM16.24 17.66l1.42-1.42 2.12 2.12-1.42 1.42zM4.22 18.36l2.12-2.12 1.42 1.42-2.12 2.12zM16.24 6.34l2.12-2.12 1.42 1.42-2.12 2.12z"/></svg>
+            </button>
+            <button class="btn btn-tonal has-icon" onclick="copyToClipboard()" title="Copy code">
+                <svg class="i" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                <span class="btn-label">Copy code</span>
+            </button>
+            <button class="btn btn-tonal has-icon" id="uploadBtn" title="Upload SVG or XML file">
+                <svg class="i" viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/></svg>
+                <span class="btn-label">Upload</span>
+            </button>
+            <input type="file" id="fileInput" accept=".svg,.xml,image/svg+xml,text/xml,application/xml" hidden>
+            <div class="menu-wrap" id="dlWrap">
+                <button class="btn btn-filled has-icon" id="dlBtn" title="Download" aria-haspopup="menu" aria-expanded="false">
+                    <svg class="i" viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+                    <span class="btn-label">Download</span>
+                    <svg class="i chev" viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="menu is-empty" id="dlMenu" role="menu">
+                    <div class="menu-note">Nothing to download yet</div>
+                    <button class="menu-item" role="menuitem" data-fmt="svg">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                        SVG (.svg)
+                    </button>
+                    <button class="menu-item" role="menuitem" data-fmt="png">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                        PNG (.png)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="panel-container">
+            <div class="label-bar">
+                <span class="label">
+                    <svg class="i" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                    Input code
+                </span>
+                <span class="hint">SVG / XML</span>
+            </div>
+            <div class="toolbar">
+                <div class="tool-group">
+                    <button class="chip" onclick="clearCode()" title="Clear all code">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+                        Clear
+                    </button>
+                    <button class="chip" onclick="removeHardCodedColors()" title="Replace colors with currentColor">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                        Uncolor
+                    </button>
+                    <button class="chip" onclick="simplifySvg()" title="Optimize SVG">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                        Simplify
+                    </button>
+                    <button class="chip" onclick="flipSvg('horizontal')" title="Flip Horizontal">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"/></svg>
+                        Flip H
+                    </button>
+                    <button class="chip" onclick="flipSvg('vertical')" title="Flip Vertical">
+                        <svg class="i" viewBox="0 0 24 24" style="transform: rotate(90deg)"><path d="M15 21h2v-2h-2v2zm4-12h2V7h-2v2zM3 5v14c0 1.1.9 2 2 2h4v-2H5V5h4V3H5c-1.1 0-2 .9-2 2zm16-2v2h2c0-1.1-.9-2-2-2zm-8 20h2V1h-2v22zm8-6h2v-2h-2v2zM15 5h2V3h-2v2zm4 8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2z"/></svg>
+                        Flip V
+                    </button>
+                    <button class="chip" id="wrapToggle" onclick="toggleWrap()" title="Wrap long lines" aria-pressed="false">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3 3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"/></svg>
+                        Wrap
+                    </button>
+                </div>
+            </div>
+            <div class="panel">
+                <textarea id="svgInput" spellcheck="false" placeholder='<svg width="100" height="100">...</svg>'></textarea>
+            </div>
+        </section>
+
+        <div class="resizer" id="resizer" role="separator" aria-orientation="vertical" aria-label="Resize panels" tabindex="0" title="Drag to resize · double-click to reset">
+            <div class="grip"></div>
+        </div>
+        <div class="mid-mark" aria-hidden="true"></div>
+
+        <section class="panel-container">
+            <div class="label-bar">
+                <span class="label">
+                    <svg class="i" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    Live preview
+                </span>
+                <span class="hint">Drag to pan · scroll to zoom</span>
+            </div>
+            <div class="toolbar">
+                <div class="zoom-control">
+                    <button class="icon-btn sm" onclick="resetView()" title="Reset View" aria-label="Reset view">
+                        <svg class="i" viewBox="0 0 24 24"><path d="M15 3l2.3 2.3-2.89 2.87 1.42 1.42L18.7 6.7 21 9V3zM3 9l2.3-2.3 2.87 2.89 1.42-1.42L6.7 5.3 9 3H3zm6 12l-2.3-2.3 2.89-2.87-1.42-1.42L5.3 17.3 3 15v6zm12-6l-2.3 2.3-2.87-2.89-1.42 1.42 2.89 2.87L15 21h6z"/></svg>
+                    </button>
+                    <input type="range" id="zoomSlider" min="0.1" max="5" step="0.1" value="1" aria-label="Zoom">
+                    <span class="zoom-label" id="zoomLabel">100%</span>
+                </div>
+                <div class="spacer"></div>
+                <button class="chip" id="toggleBg" title="Toggle Background Color" aria-pressed="false">
+                    <svg class="i" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18V4c4.41 0 8 3.59 8 8s-3.59 8-8 8z"/></svg>
+                    Background
+                </button>
+            </div>
+            <div id="canvas" class="panel canvas checkerboard">
+                <div id="engineBadge" class="engine-badge"></div>
+                <div id="preview-container">
+                    <div id="placeholder" class="placeholder">
+                        <div class="badge">
+                            <svg class="i" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                        </div>
+                        <p>Paste SVG code to start</p>
+                        <span class="sub">Your preview appears here as you type.</span>
+                        <button class="btn btn-tonal" onclick="loadSample()">Try a sample</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="dropOverlay" aria-hidden="true">
+        <div class="drop-box">
+            <svg class="i" viewBox="0 0 24 24"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+            Drop an SVG or XML file
+            <small>It will open in the editor</small>
+        </div>
+    </div>
+
+    <div id="dropModal" role="dialog" aria-modal="true" aria-labelledby="dropTitle">
+        <div class="dialog">
+            <h2 id="dropTitle">Replace current code?</h2>
+            <p>The editor already has code. Load <b id="dropName">file</b> and replace it?</p>
+            <div class="dialog-actions">
+                <button class="btn btn-text" id="dropCancel">Cancel</button>
+                <button class="btn btn-filled" id="dropConfirm">Replace</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" role="status" aria-live="polite">Copied to clipboard!</div>
+
+    <script>
+        const input = document.getElementById("svgInput");
+        const preview = document.getElementById("preview-container");
+        const byteDisplay = document.getElementById("byteCount");
+        const placeholder = document.getElementById("placeholder");
+        const canvas = document.getElementById("canvas");
+        const toggleBg = document.getElementById("toggleBg");
+        const toast = document.getElementById("toast");
+        const zoomSlider = document.getElementById("zoomSlider");
+        const zoomLabel = document.getElementById("zoomLabel");
+        const themeToggle = document.getElementById("themeToggle");
+
+        /* ---------- Safe storage helpers ---------- */
+        function storeGet(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
+        function storeSet(key, val) { try { localStorage.setItem(key, val); } catch (e) { /* ignore */ } }
+
+        /* ---------- App light / dark theme ---------- */
+        const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        function setAppTheme(name) { document.documentElement.setAttribute("data-theme", name); }
+        setAppTheme(storeGet("svg-studio-app-theme") || (darkQuery.matches ? "dark" : "light"));
+        themeToggle.addEventListener("click", () => {
+            const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            setAppTheme(next);
+            storeSet("svg-studio-app-theme", next);
+        });
+        darkQuery.addEventListener("change", (e) => {
+            if (!storeGet("svg-studio-app-theme")) setAppTheme(e.matches ? "dark" : "light");
+        });
+
+        let isTransparent = storeGet('svg-studio-theme') !== 'solid';
+
+        const editor = CodeMirror.fromTextArea(input, {
+            mode: "xml",
+            theme: "m3",
+            lineNumbers: true,
+            lineWrapping: storeGet("svg-studio-wrap") === "1",
+            viewportMargin: Infinity,
+            dragDrop: false
+        });
+
+        editor.on("change", updatePreview);
+
+        function clearCode() {
+            editor.setValue('');
+            updatePreview();
+            showToast("Code cleared");
+        }
+
+        function loadSample() {
+            editor.setValue(
+`<?xml version="1.0" encoding="utf-8"?>
+
+<!-- License: CC Attribution. Made by Frexy: https://github.com/frexy/glyph-iconset -->
+<svg width="800px" height="800px" viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-tree">
+    
+    <title>929</title>
+    
+    <defs>
+
+</defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M14.779,12.18 L11.795,8.501 C11.795,8.501 13.396,8.937 13.57,8.937 C14.035,8.937 13.765,8.42 13.57,8.223 L11.185,5.192 C11.185,5.192 12.333,4.918 12.75,4.918 C13.168,4.918 12.947,4.401 12.75,4.204 L9.4,0.061 C9.203,-0.136 8.883,-0.136 8.686,0.061 L5.291,4.161 C5.093,4.358 4.805,4.876 5.291,4.876 C5.777,4.876 6.913,5.192 6.913,5.192 L4.325,8.079 C4.127,8.276 3.768,8.793 4.325,8.793 C4.644,8.793 6.275,8.502 6.275,8.502 L3.317,12.189 C3.12,12.385 2.76,12.903 3.317,12.903 C3.874,12.903 8.008,11.896 8.008,11.896 L8.008,14.941 C8.008,15.478 8.444,15.914 8.983,15.914 C9.52,15.914 9.998,15.478 9.998,14.941 L9.998,11.896 C9.998,11.896 14.373,12.895 14.778,12.895 C15.183,12.895 14.976,12.376 14.779,12.18 L14.779,12.18 Z" fill="#434343" class="si-glyph-fill">
+
+</path>
+    </g>
+</svg>`);
+            updatePreview();
+            showToast("Sample loaded");
+        }
+
+        function applyTheme() {
+            if (isTransparent) {
+                canvas.classList.add("checkerboard");
+                canvas.classList.remove("is-solid");
+                canvas.style.backgroundColor = "";
+                toggleBg.classList.remove("selected");
+                toggleBg.setAttribute("aria-pressed", "false");
+                storeSet('svg-studio-theme', 'transparent');
+            } else {
+                canvas.classList.remove("checkerboard");
+                canvas.classList.add("is-solid");
+                canvas.style.backgroundColor = "#1e293b";
+                toggleBg.classList.add("selected");
+                toggleBg.setAttribute("aria-pressed", "true");
+                storeSet('svg-studio-theme', 'solid');
+            }
+        }
+
+        /* =====================================================================
+           XML PREVIEW ENGINE
+           Converts previewable XML (Android vector / shape / layer-list /
+           selector / ripple / inset / adaptive-icon drawables and color
+           resources) into SVG. Anything else is reported as unsupported.
+           No external libraries.
+        ===================================================================== */
+        const XmlEngine = (() => {
+            const SVGNS = "http://www.w3.org/2000/svg";
+            const NS = {
+                android: "http://schemas.android.com/apk/res/android",
+                aapt: "http://schemas.android.com/aapt",
+                app: "http://schemas.android.com/apk/res-auto",
+                tools: "http://schemas.android.com/tools"
+            };
+            const SUPPORTED = "Android vector, shape, layer-list, selector, ripple, inset and adaptive-icon drawables, and color resources";
+            const KINDS = {
+                "vector": "Android Vector Drawable", "shape": "Android Shape Drawable",
+                "layer-list": "Android Layer List", "selector": "Android Selector",
+                "ripple": "Android Ripple", "inset": "Android Inset Drawable",
+                "adaptive-icon": "Android Adaptive Icon", "resources": "Android Color Resources"
+            };
+            const NAMED = {
+                black: "#000000", white: "#ffffff", red: "#ff0000", green: "#00ff00", blue: "#0000ff",
+                yellow: "#ffff00", cyan: "#00ffff", magenta: "#ff00ff", gray: "#888888", grey: "#888888",
+                lightgray: "#cccccc", lightgrey: "#cccccc", darkgray: "#444444", darkgrey: "#444444",
+                aqua: "#00ffff", fuchsia: "#ff00ff", lime: "#00ff00", maroon: "#800000", navy: "#000080",
+                olive: "#808000", purple: "#800080", silver: "#c0c0c0", teal: "#008080"
+            };
+            const SYS = {
+                "@android:color/white": "#ffffff", "@android:color/black": "#000000",
+                "@android:color/transparent": "#00000000", "@android:color/darker_gray": "#aaaaaa",
+                "@android:color/background_dark": "#000000", "@android:color/background_light": "#ffffff",
+                "@android:color/holo_blue_light": "#33b5e5", "@android:color/holo_blue_dark": "#0099cc",
+                "@android:color/holo_red_light": "#ff4444", "@android:color/holo_green_light": "#99cc00",
+                "@android:color/holo_orange_light": "#ffbb33", "@android:color/holo_purple": "#aa66cc"
+            };
+
+            class Unsupported extends Error {}
+
+            let uid = 0, notes = new Set(), defs = [], colorRes = {};
+            function reset() { uid = 0; notes = new Set(); defs = []; colorRes = {}; }
+
+            const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+            const kids = (el) => Array.from(el.children);
+            const child = (el, name) => (el ? kids(el).find((c) => c.localName === name) || null : null);
+            const num = (v, d = 0) => { const x = parseFloat(v); return isFinite(x) ? x : d; };
+            const r3 = (n) => +Number(n).toFixed(3);
+
+            function a(el, n) {
+                if (!el) return null;
+                for (const k of ["android:" + n, n, "app:" + n]) {
+                    if (el.hasAttribute(k)) return el.getAttribute(k).trim();
+                }
+                return null;
+            }
+
+            function dim(v, d = null) {
+                if (v == null) return d;
+                if (/^[@?]/.test(v)) { notes.add("Unresolved dimension " + v); return d; }
+                const x = parseFloat(v);
+                return isFinite(x) ? x : d;
+            }
+
+            function parseColor(v) {
+                if (v == null) return null;
+                v = v.trim();
+                if (v[0] === "#") {
+                    let h = v.slice(1);
+                    if (!/^[0-9a-f]+$/i.test(h)) return null;
+                    if (h.length === 3 || h.length === 4) h = h.split("").map((c) => c + c).join("");
+                    if (h.length === 6) return { hex: "#" + h.toLowerCase(), a: 1 };
+                    if (h.length === 8) return { hex: "#" + h.slice(2).toLowerCase(), a: parseInt(h.slice(0, 2), 16) / 255 };
+                    return null;
+                }
+                const l = v.toLowerCase();
+                if (SYS[l]) return parseColor(SYS[l]);
+                if (l === "transparent") return { hex: "#000000", a: 0 };
+                if (NAMED[l]) return { hex: NAMED[l], a: 1 };
+                return null;
+            }
+
+            function resolveColor(v) {
+                if (v == null) return null;
+                const direct = parseColor(v);
+                if (direct) return direct;
+                const m = /^@(?:\+?color\/)(.+)$/.exec(v);
+                if (m && colorRes[m[1]]) return colorRes[m[1]];
+                if (/^[@?]/.test(v)) {
+                    notes.add("Unresolved " + v + " (shown in gray)");
+                    return { hex: "#808080", a: 1 };
+                }
+                return null;
+            }
+
+            const solidDrawable = (c) => ({
+                w: null, h: null, vb: [0, 0, 100, 100],
+                body: `<rect width="100" height="100" fill="${c.hex}"${c.a < 1 ? ` fill-opacity="${r3(c.a)}"` : ""}/>`
+            });
+
+            /* ---------- gradients ---------- */
+            function gradientStops(g) {
+                const out = [];
+                kids(g).forEach((n) => {
+                    if (n.localName !== "item") return;
+                    const c = resolveColor(a(n, "color"));
+                    if (c) out.push({ o: Math.min(1, Math.max(0, num(a(n, "offset"), 0))), c });
+                });
+                if (!out.length) {
+                    const s = resolveColor(a(g, "startColor")), m = resolveColor(a(g, "centerColor")), e = resolveColor(a(g, "endColor"));
+                    if (s) out.push({ o: 0, c: s });
+                    if (m) out.push({ o: 0.5, c: m });
+                    if (e) out.push({ o: 1, c: e });
+                }
+                return out;
+            }
+            const stopsSvg = (list) => list.map((s) =>
+                `<stop offset="${r3(s.o)}" stop-color="${s.c.hex}"${s.c.a < 1 ? ` stop-opacity="${r3(s.c.a)}"` : ""}/>`).join("");
+            const frac = (v) => (v == null ? 0.5 : /%/.test(v) ? parseFloat(v) / 100 : num(v, 0.5));
+
+            /* shape=true: coordinates relative to the shape box (w x h); false: vector user space */
+            function makeGradient(g, shape, w, h) {
+                const type = (a(g, "type") || "linear").toLowerCase();
+                const st = gradientStops(g);
+                if (!st.length) return null;
+                if (st.length === 1) return { paint: st[0].c.hex, opacity: st[0].c.a };
+                if (type === "sweep") {
+                    notes.add("Sweep gradients are approximated with their first color");
+                    return { paint: st[0].c.hex, opacity: st[0].c.a };
+                }
+                const id = "g" + (++uid);
+                const spread = { repeat: "repeat", mirror: "reflect" }[a(g, "tileMode")] || "pad";
+                if (type === "radial") {
+                    let cx, cy, r;
+                    if (shape) {
+                        cx = frac(a(g, "centerX")) * w; cy = frac(a(g, "centerY")) * h;
+                        const gr = a(g, "gradientRadius");
+                        r = gr == null ? Math.min(w, h) / 2 : /%/.test(gr) ? (parseFloat(gr) / 100) * Math.min(w, h) : num(gr, Math.min(w, h) / 2);
+                    } else {
+                        cx = num(a(g, "centerX")); cy = num(a(g, "centerY")); r = num(a(g, "gradientRadius"));
+                    }
+                    if (!(r > 0)) return { paint: st[0].c.hex, opacity: st[0].c.a };
+                    defs.push(`<radialGradient id="${id}" gradientUnits="userSpaceOnUse" cx="${r3(cx)}" cy="${r3(cy)}" r="${r3(r)}" spreadMethod="${spread}">${stopsSvg(st)}</radialGradient>`);
+                    return { paint: `url(#${id})`, opacity: 1 };
+                }
+                if (shape) {
+                    const ang = (((num(a(g, "angle"), 0) % 360) + 360) % 360);
+                    const map = { 0: [0, .5, 1, .5], 45: [0, 1, 1, 0], 90: [0, 1, 0, 0], 135: [1, 1, 0, 0], 180: [1, .5, 0, .5], 225: [1, 0, 0, 1], 270: [0, 0, 0, 1], 315: [0, 0, 1, 1] };
+                    const m = map[(Math.round(ang / 45) * 45) % 360] || map[0];
+                    defs.push(`<linearGradient id="${id}" x1="${m[0]}" y1="${m[1]}" x2="${m[2]}" y2="${m[3]}" spreadMethod="${spread}">${stopsSvg(st)}</linearGradient>`);
+                } else {
+                    defs.push(`<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${r3(num(a(g, "startX")))}" y1="${r3(num(a(g, "startY")))}" x2="${r3(num(a(g, "endX")))}" y2="${r3(num(a(g, "endY")))}" spreadMethod="${spread}">${stopsSvg(st)}</linearGradient>`);
+                }
+                return { paint: `url(#${id})`, opacity: 1 };
+            }
+
+            /* ---------- vector drawable ---------- */
+            function vecPaint(p, name) {
+                for (const c of kids(p)) {
+                    if (c.localName === "attr" && c.getAttribute("name") === "android:" + name) {
+                        const g = kids(c).find((x) => x.localName === "gradient");
+                        if (g) { const r = makeGradient(g, false); if (r) return r; }
+                    }
+                }
+                const c = resolveColor(a(p, name));
+                return c ? { paint: c.hex, opacity: c.a } : null;
+            }
+
+            function vecPath(p) {
+                const d = a(p, "pathData");
+                if (!d) return "";
+                const fill = vecPaint(p, "fillColor"), stroke = vecPaint(p, "strokeColor");
+                let s = `<path d="${esc(d)}"`;
+                if (fill) {
+                    s += ` fill="${fill.paint}"`;
+                    const o = fill.opacity * num(a(p, "fillAlpha"), 1);
+                    if (o < 1) s += ` fill-opacity="${r3(o)}"`;
+                } else s += ' fill="none"';
+                if (a(p, "fillType") === "evenOdd") s += ' fill-rule="evenodd"';
+                const sw = num(a(p, "strokeWidth"), 0);
+                if (stroke && sw > 0) {
+                    s += ` stroke="${stroke.paint}" stroke-width="${r3(sw)}"`;
+                    const o = stroke.opacity * num(a(p, "strokeAlpha"), 1);
+                    if (o < 1) s += ` stroke-opacity="${r3(o)}"`;
+                    const cap = a(p, "strokeLineCap"), join = a(p, "strokeLineJoin");
+                    if (cap && cap !== "butt") s += ` stroke-linecap="${cap}"`;
+                    if (join && join !== "miter") s += ` stroke-linejoin="${join}"`;
+                    const ml = a(p, "strokeMiterLimit");
+                    if (ml) s += ` stroke-miterlimit="${num(ml, 4)}"`;
+                    const ts = num(a(p, "trimPathStart"), 0), te = num(a(p, "trimPathEnd"), 1), to = num(a(p, "trimPathOffset"), 0);
+                    if (ts !== 0 || te !== 1 || to !== 0) {
+                        const len = Math.max(0, Math.min(1, te) - Math.max(0, ts));
+                        const start = (((ts + to) % 1) + 1) % 1;
+                        if (len <= 0) s = s.replace(/ stroke="[^"]*"/, ' stroke="none"');
+                        else if (len < 1) s += ` pathLength="1" stroke-dasharray="${r3(len)} ${r3(1 - len)}" stroke-dashoffset="${r3(-start)}"`;
+                    }
+                }
+                return s + "/>";
+            }
+
+            function vecGroup(g) {
+                const px = num(a(g, "pivotX")), py = num(a(g, "pivotY"));
+                const tx = num(a(g, "translateX")), ty = num(a(g, "translateY"));
+                const r = num(a(g, "rotation")), sx = num(a(g, "scaleX"), 1), sy = num(a(g, "scaleY"), 1);
+                const t = (tx || ty || px || py || r || sx !== 1 || sy !== 1)
+                    ? ` transform="translate(${r3(tx + px)} ${r3(ty + py)}) rotate(${r3(r)}) scale(${r3(sx)} ${r3(sy)}) translate(${r3(-px)} ${r3(-py)})"` : "";
+                return `<g${t}>${vecChildren(g)}</g>`;
+            }
+
+            function vecChildren(parent) {
+                let out = "", open = 0;
+                for (const n of kids(parent)) {
+                    const t = n.localName;
+                    if (t === "path") out += vecPath(n);
+                    else if (t === "group") out += vecGroup(n);
+                    else if (t === "clip-path") {
+                        const d = a(n, "pathData");
+                        if (d) {
+                            const id = "c" + (++uid);
+                            defs.push(`<clipPath id="${id}"><path d="${esc(d)}"/></clipPath>`);
+                            out += `<g clip-path="url(#${id})">`;
+                            open++;
+                        }
+                    }
+                }
+                return out + "</g>".repeat(open);
+            }
+
+            function renderVector(root) {
+                let w = dim(a(root, "width")), h = dim(a(root, "height"));
+                const vw = num(a(root, "viewportWidth"), 0) || w || 24;
+                const vh = num(a(root, "viewportHeight"), 0) || h || 24;
+                w = w || vw; h = h || vh;
+                let body = vecChildren(root);
+                const tintAttr = a(root, "tint");
+                if (tintAttr) {
+                    const tint = parseColor(tintAttr);
+                    if (tint) {
+                        const id = "t" + (++uid);
+                        defs.push(`<filter id="${id}" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feFlood flood-color="${tint.hex}" flood-opacity="${r3(tint.a)}"/><feComposite in2="SourceAlpha" operator="in"/></filter>`);
+                        body = `<g filter="url(#${id})">${body}</g>`;
+                    } else notes.add("Tint " + tintAttr + " could not be resolved and was ignored");
+                }
+                const alpha = num(a(root, "alpha"), 1);
+                if (alpha < 1) body = `<g opacity="${r3(alpha)}">${body}</g>`;
+                return { w, h, vb: [0, 0, vw, vh], body, keep: true };
+            }
+
+            /* ---------- shape drawable ---------- */
+            function rrPath(x, y, w, h, tl, tr, br, bl) {
+                const m = Math.max(0, Math.min(w, h) / 2);
+                [tl, tr, br, bl] = [tl, tr, br, bl].map((r) => Math.max(0, Math.min(r, m)));
+                return `M${r3(x + tl)} ${r3(y)}H${r3(x + w - tr)}A${r3(tr)} ${r3(tr)} 0 0 1 ${r3(x + w)} ${r3(y + tr)}` +
+                    `V${r3(y + h - br)}A${r3(br)} ${r3(br)} 0 0 1 ${r3(x + w - br)} ${r3(y + h)}` +
+                    `H${r3(x + bl)}A${r3(bl)} ${r3(bl)} 0 0 1 ${r3(x)} ${r3(y + h - bl)}` +
+                    `V${r3(y + tl)}A${r3(tl)} ${r3(tl)} 0 0 1 ${r3(x + tl)} ${r3(y)}Z`;
+            }
+
+            function renderShape(sh) {
+                const kind = (a(sh, "shape") || "rectangle").toLowerCase();
+                const sizeEl = child(sh, "size");
+                let sw0 = dim(a(sizeEl, "width"), 0), sh0 = dim(a(sizeEl, "height"), 0);
+                const hasSize = sw0 > 0 && sh0 > 0;
+                const w = sw0 > 0 ? sw0 : 200;
+                const h = sh0 > 0 ? sh0 : (kind === "line" ? 24 : 200);
+
+                let fill = null;
+                const gEl = child(sh, "gradient");
+                if (gEl) fill = makeGradient(gEl, true, w, h);
+                if (!fill) {
+                    const c = resolveColor(a(child(sh, "solid"), "color"));
+                    if (c) fill = { paint: c.hex, opacity: c.a };
+                }
+                const stEl = child(sh, "stroke");
+                const sw = dim(a(stEl, "width"), 0) || 0;
+                const sc = stEl ? resolveColor(a(stEl, "color")) : null;
+                const dw = dim(a(stEl, "dashWidth"), 0), dg = dim(a(stEl, "dashGap"), 0);
+
+                let attrs = fill
+                    ? ` fill="${fill.paint}"${fill.opacity < 1 ? ` fill-opacity="${r3(fill.opacity)}"` : ""}` : ' fill="none"';
+                if (sw > 0 && sc) {
+                    attrs += ` stroke="${sc.hex}" stroke-width="${r3(sw)}"${sc.a < 1 ? ` stroke-opacity="${r3(sc.a)}"` : ""}`;
+                    if (dw > 0 && dg > 0) attrs += ` stroke-dasharray="${r3(dw)} ${r3(dg)}"`;
+                }
+                const half = sw > 0 && sc ? sw / 2 : 0;
+
+                let body;
+                if (kind === "oval") {
+                    body = `<ellipse cx="${r3(w / 2)}" cy="${r3(h / 2)}" rx="${r3(Math.max(0, w / 2 - half))}" ry="${r3(Math.max(0, h / 2 - half))}"${attrs}/>`;
+                } else if (kind === "line") {
+                    const la = sw > 0 && sc ? "" : ' stroke="#808080" stroke-width="2"';
+                    body = `<line x1="0" y1="${r3(h / 2)}" x2="${r3(w)}" y2="${r3(h / 2)}"${attrs.replace(/ fill="[^"]*"/, ' fill="none"')}${la}/>`;
+                } else if (kind === "ring") {
+                    const ir = a(sh, "innerRadius") != null ? dim(a(sh, "innerRadius"), w / 3) : w / num(a(sh, "innerRadiusRatio"), 3);
+                    const th = a(sh, "thickness") != null ? dim(a(sh, "thickness"), w / 9) : w / num(a(sh, "thicknessRatio"), 9);
+                    const ro = ir + th, cx = w / 2, cy = h / 2;
+                    const circ = (r) => `M${r3(cx - r)} ${r3(cy)}A${r3(r)} ${r3(r)} 0 1 0 ${r3(cx + r)} ${r3(cy)}A${r3(r)} ${r3(r)} 0 1 0 ${r3(cx - r)} ${r3(cy)}Z`;
+                    body = `<path d="${circ(ro)}${circ(ir)}" fill-rule="evenodd"${attrs}/>`;
+                } else {
+                    if (kind !== "rectangle") notes.add('Unknown shape "' + kind + '" shown as a rectangle');
+                    const cEl = child(sh, "corners");
+                    const rad = dim(a(cEl, "radius"), 0) || 0;
+                    const tl = dim(a(cEl, "topLeftRadius"), rad), tr = dim(a(cEl, "topRightRadius"), rad);
+                    const br = dim(a(cEl, "bottomRightRadius"), rad), bl = dim(a(cEl, "bottomLeftRadius"), rad);
+                    const adj = (r) => Math.max(0, r - half);
+                    body = `<path d="${rrPath(half, half, w - half * 2, h - half * 2, adj(tl), adj(tr), adj(br), adj(bl))}"${attrs}/>`;
+                }
+                return { w: hasSize ? w : null, h: hasSize ? h : null, vb: [0, 0, w, h], body };
+            }
+
+            /* ---------- layered / wrapper drawables ---------- */
+            function nested(d, x, y, w, h) {
+                return `<svg x="${r3(x)}" y="${r3(y)}" width="${r3(w)}" height="${r3(h)}" viewBox="${d.vb.join(" ")}" preserveAspectRatio="${d.keep ? "xMidYMid meet" : "none"}" overflow="hidden">${d.body}</svg>`;
+            }
+
+            function itemDrawable(it, depth) {
+                try {
+                    for (const c of kids(it)) {
+                        if (c.localName === "attr") { const k = kids(c)[0]; if (k) return renderDrawable(k, depth + 1); }
+                    }
+                    const first = kids(it).find((c) => c.localName !== "attr");
+                    if (first) return renderDrawable(first, depth + 1);
+                    const dv = a(it, "drawable");
+                    if (dv) {
+                        const c = parseColor(dv);
+                        if (c) return solidDrawable(c);
+                        notes.add("Skipped " + dv + " (resource not available in this file)");
+                    }
+                } catch (e) {
+                    if (!(e instanceof Unsupported)) throw e;
+                    notes.add(e.message);
+                }
+                return null;
+            }
+
+            function layerItem(it, depth) {
+                const d = itemDrawable(it, depth);
+                if (!d) return null;
+                const inset = (n) => dim(a(it, n), 0) || 0;
+                return { d, l: inset("left") || inset("start"), t: inset("top"), r: inset("right") || inset("end"), b: inset("bottom"), iw: dim(a(it, "width")), ih: dim(a(it, "height")) };
+            }
+
+            function layersFromItems(items) {
+                if (!items.length) throw new Unsupported("None of the layers in this drawable could be rendered.");
+                let W = 0, H = 0;
+                items.forEach((i) => {
+                    W = Math.max(W, (i.iw || i.d.w || 0) + i.l + i.r);
+                    H = Math.max(H, (i.ih || i.d.h || 0) + i.t + i.b);
+                });
+                W = W || 200; H = H || 200;
+                const body = items.map((i) => {
+                    const aw = W - i.l - i.r, ah = H - i.t - i.b;
+                    const cw = i.iw || aw, ch = i.ih || ah;
+                    return nested(i.d, i.l + (aw - cw) / 2, i.t + (ah - ch) / 2, cw, ch);
+                }).join("");
+                return { w: W, h: H, vb: [0, 0, W, H], body };
+            }
+
+            const stateName = (i) => Array.from(i.attributes).filter((at) => /state_/.test(at.name))
+                .map((at) => at.name.replace(/.*state_/, "") + (at.value === "false" ? " off" : "")).join(", ") || "default";
+
+            function renderSelector(root, depth) {
+                const items = kids(root).filter((i) => i.localName === "item");
+                if (!items.length) throw new Unsupported("This selector has no items.");
+                if (items.every((i) => a(i, "color") != null && !a(i, "drawable") && !kids(i).length)) {
+                    return palette(items.map((i) => ({ name: stateName(i), c: resolveColor(a(i, "color")) })).filter((x) => x.c));
+                }
+                const plain = items.filter((i) => !Array.from(i.attributes).some((at) => /state_/.test(at.name)));
+                const pick = plain.length ? plain[plain.length - 1] : items[0];
+                notes.add("Showing the default state of this selector");
+                const d = itemDrawable(pick, depth);
+                if (!d) throw new Unsupported("The default state of this selector points to a resource that isn't in the file.");
+                return d;
+            }
+
+            function renderRipple(root, depth) {
+                notes.add("Ripple animation is not shown");
+                const items = kids(root).filter((i) => i.localName === "item" && !/mask$/.test(a(i, "id") || ""))
+                    .map((i) => layerItem(i, depth)).filter(Boolean);
+                if (items.length) return layersFromItems(items);
+                const c = resolveColor(a(root, "color"));
+                if (c) return solidDrawable(c);
+                throw new Unsupported("This ripple has no content layer to draw.");
+            }
+
+            function renderAdaptive(root, depth) {
+                const layers = [child(root, "background"), child(root, "foreground")]
+                    .map((x) => (x ? itemDrawable(x, depth) : null)).filter(Boolean);
+                if (!layers.length) throw new Unsupported("This adaptive icon references @drawable / @mipmap resources that aren't included in the XML.");
+                const id = "m" + (++uid);
+                defs.push(`<clipPath id="${id}"><rect width="108" height="108" rx="30"/></clipPath>`);
+                notes.add("Shown with a rounded-square mask");
+                return { w: 108, h: 108, vb: [0, 0, 108, 108], body: `<g clip-path="url(#${id})">${layers.map((d) => nested(d, 0, 0, 108, 108)).join("")}</g>` };
+            }
+
+            /* ---------- color palette ---------- */
+            function palette(list) {
+                if (!list.length) throw new Unsupported("There are no colors in this file that can be shown.");
+                if (list.length > 60) { notes.add("Showing the first 60 colors"); list = list.slice(0, 60); }
+                const cols = Math.min(4, list.length), rows = Math.ceil(list.length / cols);
+                const cw = 148, ch = 104, pad = 16;
+                const W = pad * 2 + cols * cw - 12, H = pad * 2 + rows * ch - 8;
+                const chk = "pal" + (++uid);
+                defs.push(`<pattern id="${chk}" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#fff"/><rect width="5" height="5" fill="#ddd"/><rect x="5" y="5" width="5" height="5" fill="#ddd"/></pattern>`);
+                let body = `<rect width="${W}" height="${H}" rx="14" fill="#fff" stroke="#e3e3e3"/>`;
+                list.forEach((it, i) => {
+                    const x = pad + (i % cols) * cw, y = pad + Math.floor(i / cols) * ch;
+                    const label = it.name.length > 20 ? it.name.slice(0, 19) + "…" : it.name;
+                    const hex = it.c.hex.toUpperCase() + (it.c.a < 1 ? " · " + Math.round(it.c.a * 100) + "%" : "");
+                    body += `<rect x="${x}" y="${y}" width="${cw - 12}" height="60" rx="10" fill="url(#${chk})"/>` +
+                        `<rect x="${x}" y="${y}" width="${cw - 12}" height="60" rx="10" fill="${it.c.hex}" fill-opacity="${r3(it.c.a)}" stroke="#00000022"/>` +
+                        `<text x="${x}" y="${y + 78}" font-family="Roboto, system-ui, sans-serif" font-size="12" font-weight="500" fill="#222">${esc(label)}</text>` +
+                        `<text x="${x}" y="${y + 93}" font-family="Roboto Mono, ui-monospace, monospace" font-size="11" fill="#666">${esc(hex)}</text>`;
+                });
+                return { w: W, h: H, vb: [0, 0, W, H], body };
+            }
+
+            function renderResources(root) {
+                const entries = kids(root).filter((c) => (c.localName === "color" || (c.localName === "item" && c.getAttribute("type") === "color")) && c.getAttribute("name"));
+                if (!entries.length) throw new Unsupported("This resources file has no <color> entries, so there is nothing visual to show.");
+                const raw = entries.map((c) => ({ name: c.getAttribute("name"), v: c.textContent.trim() }));
+                // two passes so @color/other references resolve
+                for (let pass = 0; pass < 3; pass++) {
+                    raw.forEach((r) => { const c = resolveColorQuiet(r.v); if (c) colorRes[r.name] = c; });
+                }
+                return palette(raw.map((r) => ({ name: r.name, c: colorRes[r.name] || { hex: "#808080", a: 1 } })));
+            }
+            function resolveColorQuiet(v) {
+                const direct = parseColor(v);
+                if (direct) return direct;
+                const m = /^@(?:\+?color\/)(.+)$/.exec(v);
+                return m && colorRes[m[1]] ? colorRes[m[1]] : null;
+            }
+
+            /* ---------- dispatcher ---------- */
+            function renderDrawable(el, depth) {
+                if (depth > 8) throw new Unsupported("Drawables are nested too deeply.");
+                switch (el.localName) {
+                    case "vector": return renderVector(el);
+                    case "shape": return renderShape(el);
+                    case "layer-list": return layersFromItems(kids(el).filter((i) => i.localName === "item").map((i) => layerItem(i, depth)).filter(Boolean));
+                    case "selector": return renderSelector(el, depth);
+                    case "ripple": return renderRipple(el, depth);
+                    case "adaptive-icon": return renderAdaptive(el, depth);
+                    case "inset": {
+                        const d = itemDrawable(el, depth);
+                        if (!d) throw new Unsupported("This inset wraps a resource that isn't in the file.");
+                        const all = dim(a(el, "inset"), 0) || 0;
+                        const g = (n) => dim(a(el, n), all) || 0;
+                        return layersFromItems([{ d, l: g("insetLeft"), t: g("insetTop"), r: g("insetRight"), b: g("insetBottom"), iw: null, ih: null }]);
+                    }
+                    default:
+                        throw new Unsupported("<" + el.localName + "> is not a drawable or resource type this engine can render.");
+                }
+            }
+
+            function toSvg(d) {
+                let W = d.w || 200, H = d.h || 200;
+                const k = Math.max(1, Math.round(256 / Math.max(W, H)));   // enlarge tiny dp-sized drawables
+                W *= k; H *= k;
+                return `<svg xmlns="${SVGNS}" width="${r3(W)}" height="${r3(H)}" viewBox="${d.vb.join(" ")}">` +
+                    (defs.length ? `<defs>${defs.join("")}</defs>` : "") + d.body + "</svg>";
+            }
+
+            /* ---------- parsing ---------- */
+            function describeParseError(txt) {
+                const m = /error on line (\d+) at column (\d+): ([^\n]*)/i.exec(txt);
+                if (m) return `line ${m[1]}, column ${m[2]}: ${m[3].trim()}`;
+                const ff = /Line Number (\d+), Column (\d+)/i.exec(txt);
+                const head = txt.split("\n").map((s) => s.trim()).filter(Boolean)[0] || "";
+                return ff ? `line ${ff[1]}, column ${ff[2]}: ${head.replace(/^XML Parsing Error:\s*/i, "")}` : head.slice(0, 140);
+            }
+
+            function parseXml(text) {
+                const attempt = (s) => {
+                    const doc = new DOMParser().parseFromString(s, "application/xml");
+                    const err = doc.querySelector("parsererror");
+                    return err ? { error: err.textContent || "" } : { doc };
+                };
+                let r = attempt(text);
+                if (r.error && /prefix|namespace/i.test(r.error)) {
+                    const decl = Object.entries(NS).filter(([k]) => !text.includes("xmlns:" + k))
+                        .map(([k, v]) => ` xmlns:${k}="${v}"`).join("");
+                    const fixed = text.replace(/<([A-Za-z_][\w:.\-]*)/, (m, t) => "<" + t + decl);
+                    const r2 = attempt(fixed);
+                    if (!r2.error) r = r2;
+                }
+                return r;
+            }
+
+            function run(text) {
+                reset();
+                const parsed = parseXml(text.trim());
+                if (parsed.error) return { ok: false, type: "invalid", message: describeParseError(parsed.error) || "it could not be parsed" };
+                const root = parsed.doc.documentElement;
+                try {
+                    const d = root.localName === "resources" ? renderResources(root) : renderDrawable(root, 0);
+                    return { ok: true, svg: toSvg(d), kind: KINDS[root.localName] || "XML", notes: Array.from(notes) };
+                } catch (e) {
+                    if (e instanceof Unsupported) return { ok: false, type: "unsupported", root: root.localName, message: e.message, supported: SUPPORTED };
+                    return { ok: false, type: "unsupported", root: root.localName, message: "The engine hit an unexpected problem (" + e.message + ").", supported: SUPPORTED };
+                }
+            }
+
+            return { run, SUPPORTED };
+        })();
+
+        function fmtBytes(bytes) {
+            return bytes > 1024 ? (bytes / 1024).toFixed(2) + " KB" : bytes + " B";
+        }
+
+        function showPreviewError(err) {
+            preview.innerHTML = "";
+            const p = document.createElement("div");
+            p.className = "placeholder wide";
+            const badge = document.createElement("div");
+            badge.className = "badge";
+            badge.innerHTML = '<svg class="i" viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>';
+            const title = document.createElement("p");
+            title.textContent = "This XML can't be previewed";
+            const detail = document.createElement("span");
+            detail.className = "sub";
+            const hint = document.createElement("span");
+            hint.className = "hint2";
+            if (err && err.type === "unsupported") {
+                detail.textContent = err.message;
+                hint.textContent = "The preview engine supports: " + (err.supported || XmlEngine.SUPPORTED) + ". SVG files always render natively.";
+            } else {
+                detail.textContent = "It isn't valid, well-formed XML" + (err && err.message ? " (" + err.message + ")." : ".");
+                hint.textContent = "Fix the problem and the preview will update as you type.";
+            }
+            p.append(badge, title, detail, hint);
+            preview.appendChild(p);
+        }
+
+        function setEngineBadge(res) {
+            const b = document.getElementById("engineBadge");
+            if (!res || !res.kind || res.kind === "svg") { b.className = "engine-badge"; b.textContent = ""; b.title = ""; return; }
+            const n = res.notes ? res.notes.length : 0;
+            b.innerHTML = '<svg class="i" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>';
+            b.appendChild(document.createTextNode(res.kind + " · rendered from XML" + (n ? " · " + n + " note" + (n > 1 ? "s" : "") : "")));
+            b.title = n ? res.notes.join("\n") : res.kind;
+            b.className = "engine-badge show";
+        }
+
+        /* Parse SVG or XML text into an <svg> element (strict XML first, forgiving HTML parse as fallback) */
+        function parseSvgElement(text) {
+            let el = null;
+            const xmlDoc = new DOMParser().parseFromString(text, "image/svg+xml");
+            if (!xmlDoc.querySelector("parsererror")) {
+                const root = xmlDoc.documentElement;
+                if (root && root.localName.toLowerCase() === "svg") el = document.importNode(root, true);
+                else {
+                    const inner = xmlDoc.getElementsByTagNameNS("http://www.w3.org/2000/svg", "svg")[0];
+                    if (inner) el = document.importNode(inner, true);
+                }
+            }
+            if (!el) {
+                const tpl = document.createElement("template");
+                tpl.innerHTML = text;
+                const found = tpl.content.querySelector("svg");
+                if (found) el = document.importNode(found, true);
+            }
+            if (el) {
+                el.querySelectorAll("script").forEach(s => s.remove());
+                [el, ...el.querySelectorAll("*")].forEach(n => {
+                    [...n.attributes].forEach(a => { if (/^on/i.test(a.name)) n.removeAttribute(a.name); });
+                });
+            }
+            return el;
+        }
+
+        /* SVG first; otherwise run the XML engine. Returns { el, kind, notes } or { error } */
+        function resolveSvg(text) {
+            const direct = parseSvgElement(text);
+            if (direct) return { el: direct, kind: "svg", notes: [] };
+            const r = XmlEngine.run(text);
+            if (!r.ok) return { error: r };
+            const el = parseSvgElement(r.svg);
+            if (!el) return { error: { type: "unsupported", message: "The converted result could not be displayed.", supported: XmlEngine.SUPPORTED } };
+            return { el, kind: r.kind, notes: r.notes };
+        }
+
+        function syncDownloadState(hasCode) {
+            document.querySelectorAll("#dlMenu .menu-item").forEach(b => { b.disabled = !hasCode; });
+            document.getElementById("dlMenu").classList.toggle("is-empty", !hasCode);
+        }
+
+        function updatePreview() {
+            const value = editor.getValue().trim();
+            syncDownloadState(value !== "");
+
+            if (value === "") {
+                preview.innerHTML = "";
+                preview.appendChild(placeholder);
+                byteDisplay.innerText = "0 B";
+                setEngineBadge(null);
+                return;
+            }
+
+            byteDisplay.innerText = fmtBytes(new Blob([value]).size);
+            const res = resolveSvg(value);
+            if (res.el) {
+                preview.innerHTML = "";
+                preview.appendChild(res.el);
+                setEngineBadge(res);
+            } else {
+                showPreviewError(res.error);
+                setEngineBadge(null);
+            }
+        }
+
+        /* ---------- Wrap toggle ---------- */
+        function syncWrapUi() {
+            const on = editor.getOption("lineWrapping");
+            const btn = document.getElementById("wrapToggle");
+            btn.classList.toggle("selected", on);
+            btn.setAttribute("aria-pressed", on ? "true" : "false");
+        }
+        function toggleWrap() {
+            const on = !editor.getOption("lineWrapping");
+            editor.setOption("lineWrapping", on);
+            storeSet("svg-studio-wrap", on ? "1" : "0");
+            syncWrapUi();
+            editor.refresh();
+        }
+
+        /* ---------- Logo reloads the page ---------- */
+        document.getElementById("logoBtn").addEventListener("click", () => location.reload());
+
+        /* ---------- Download dropdown ---------- */
+        const dlWrap = document.getElementById("dlWrap");
+        const dlBtn = document.getElementById("dlBtn");
+        function setMenu(open) {
+            dlWrap.classList.toggle("open", open);
+            dlBtn.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+        dlBtn.addEventListener("click", (e) => { e.stopPropagation(); setMenu(!dlWrap.classList.contains("open")); });
+        document.addEventListener("click", (e) => { if (!dlWrap.contains(e.target)) setMenu(false); });
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
+        dlWrap.querySelectorAll(".menu-item").forEach(item => item.addEventListener("click", () => {
+            setMenu(false);
+            if (item.dataset.fmt === "png") downloadPng(); else downloadSvg();
+        }));
+
+        function saveBlob(blob, name) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = name;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }
+
+        function downloadPng() {
+            const val = editor.getValue().trim();
+            if (!val) { showToast("Nothing to export"); return; }
+            const res = resolveSvg(val);
+            if (!res.el) { showToast("This XML can't be exported as an image"); return; }
+            const el = res.el;
+            const SVGNS = "http://www.w3.org/2000/svg";
+            if (!el.getAttribute("xmlns")) el.setAttribute("xmlns", SVGNS);
+            if (!el.getAttribute("xmlns:xlink") && /xlink:/.test(new XMLSerializer().serializeToString(el))) {
+                el.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
+            }
+            let w = parseFloat(el.getAttribute("width")), h = parseFloat(el.getAttribute("height"));
+            const pct = (v) => /%\s*$/.test(v || "");
+            if (!w || !h || pct(el.getAttribute("width")) || pct(el.getAttribute("height"))) {
+                const vb = (el.getAttribute("viewBox") || "").trim().split(/[\s,]+/).map(parseFloat);
+                if (vb.length === 4 && vb[2] > 0 && vb[3] > 0) {
+                    const ratio = vb[2] / vb[3];
+                    w = vb[2] >= 256 ? vb[2] : 512;
+                    h = w / ratio;
+                } else { w = 512; h = 512; }
+            }
+            // Cap to a safe canvas size
+            const maxDim = 4096;
+            const k = Math.min(1, maxDim / Math.max(w, h));
+            w = Math.round(w * k); h = Math.round(h * k);
+            el.setAttribute("width", w);
+            el.setAttribute("height", h);
+
+            const xml = new XMLSerializer().serializeToString(el);
+            const url = URL.createObjectURL(new Blob([xml], { type: "image/svg+xml;charset=utf-8" }));
+            const img = new Image();
+            img.onload = () => {
+                const c = document.createElement("canvas");
+                c.width = w; c.height = h;
+                c.getContext("2d").drawImage(img, 0, 0, w, h);
+                URL.revokeObjectURL(url);
+                c.toBlob((blob) => {
+                    if (!blob) { showToast("PNG export failed"); return; }
+                    saveBlob(blob, "studio_export.png");
+                    showToast("PNG downloaded");
+                }, "image/png");
+            };
+            img.onerror = () => { URL.revokeObjectURL(url); showToast("PNG export failed"); };
+            img.src = url;
+        }
+
+        /* ---------- Resizable panels ---------- */
+        const mainEl = document.querySelector("main");
+        const resizer = document.getElementById("resizer");
+        const SPLIT_MIN = 0.25, SPLIT_MAX = 0.75;
+        let split = parseFloat(storeGet("svg-studio-split"));
+        if (!(split >= SPLIT_MIN && split <= SPLIT_MAX)) split = 0.5;
+        function setSplit(v, save) {
+            split = Math.min(SPLIT_MAX, Math.max(SPLIT_MIN, v));
+            mainEl.style.setProperty("--left", split + "fr");
+            mainEl.style.setProperty("--right", (1 - split) + "fr");
+            resizer.setAttribute("aria-valuenow", Math.round(split * 100));
+            editor.refresh();
+            if (save) storeSet("svg-studio-split", String(split));
+        }
+        setSplit(split, false);
+        function setSnapped(on) {
+            if (on === resizer.classList.contains("snapped")) return;
+            resizer.classList.toggle("snapped", on);
+            if (on && navigator.vibrate) { try { navigator.vibrate(8); } catch (err) { /* ignore */ } }
+        }
+        resizer.addEventListener("pointerdown", (e) => {
+            e.preventDefault();
+            resizer.setPointerCapture(e.pointerId);
+            resizer.classList.add("active");
+            document.body.classList.add("resizing");
+        });
+        resizer.addEventListener("pointermove", (e) => {
+            if (!resizer.classList.contains("active")) return;
+            const r = mainEl.getBoundingClientRect();
+            const cs = getComputedStyle(mainEl);
+            const left = r.left + parseFloat(cs.paddingLeft);
+            const usable = r.width - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - resizer.offsetWidth;
+            if (usable <= 0) return;
+            const raw = (e.clientX - left - resizer.offsetWidth / 2) / usable;
+            const snapped = Math.abs(raw - 0.5) <= 14 / usable;   // ~14px magnetic zone
+            setSplit(snapped ? 0.5 : raw, false);
+            setSnapped(snapped);
+        });
+        const endDrag = (e) => {
+            if (!resizer.classList.contains("active")) return;
+            resizer.classList.remove("active", "snapped");
+            document.body.classList.remove("resizing");
+            try { resizer.releasePointerCapture(e.pointerId); } catch (err) { /* ignore */ }
+            storeSet("svg-studio-split", String(split));
+        };
+        resizer.addEventListener("pointerup", endDrag);
+        resizer.addEventListener("pointercancel", endDrag);
+        resizer.addEventListener("dblclick", () => setSplit(0.5, true));
+        resizer.addEventListener("keydown", (e) => {
+            const step = e.key === "ArrowLeft" ? -0.02 : e.key === "ArrowRight" ? 0.02 : 0;
+            if (!step) return;
+            e.preventDefault();
+            let next = split + step;
+            // stop once at the middle when crossing it
+            if ((split < 0.5 && next > 0.5) || (split > 0.5 && next < 0.5)) next = 0.5;
+            setSplit(next, true);
+        });
+        window.addEventListener("resize", () => editor.refresh());
+
+        /* ---------- Drag & drop files ---------- */
+        const dropOverlay = document.getElementById("dropOverlay");
+        const dropModal = document.getElementById("dropModal");
+        const dropName = document.getElementById("dropName");
+        let dragDepth = 0;
+        let pendingText = null;
+        const hasFiles = (e) => e.dataTransfer && [...(e.dataTransfer.types || [])].includes("Files");
+
+        function loadText(text, name) {
+            editor.setValue(text);
+            updatePreview();
+            resetView();
+            showToast("Loaded " + name);
+        }
+        function closeDropModal() { dropModal.classList.remove("show"); pendingText = null; }
+
+        async function handleFile(file) {
+            const okName = /\.(svg|xml)$/i.test(file.name);
+            const okType = /svg|xml/i.test(file.type || "");
+            if (!okName && !okType) { showToast("Only SVG and XML files are supported"); return; }
+            let text;
+            try { text = await file.text(); } catch (err) { showToast("Couldn't read file"); return; }
+            if (editor.getValue().trim() === "") { loadText(text, file.name); return; }
+            pendingText = { text, name: file.name };
+            dropName.textContent = file.name;
+            dropModal.classList.add("show");
+            document.getElementById("dropConfirm").focus();
+        }
+
+        window.addEventListener("dragenter", (e) => {
+            if (!hasFiles(e)) return;
+            e.preventDefault(); e.stopPropagation();
+            dragDepth++;
+            dropOverlay.classList.add("show");
+        }, true);
+        window.addEventListener("dragover", (e) => {
+            if (!hasFiles(e)) return;
+            e.preventDefault(); e.stopPropagation();
+            e.dataTransfer.dropEffect = "copy";
+        }, true);
+        window.addEventListener("dragleave", (e) => {
+            if (!hasFiles(e)) return;
+            dragDepth = Math.max(0, dragDepth - 1);
+            if (dragDepth === 0) dropOverlay.classList.remove("show");
+        }, true);
+        window.addEventListener("drop", (e) => {
+            if (!hasFiles(e)) return;
+            e.preventDefault(); e.stopPropagation();
+            dragDepth = 0;
+            dropOverlay.classList.remove("show");
+            const file = e.dataTransfer.files && e.dataTransfer.files[0];
+            if (file) handleFile(file);
+        }, true);
+
+        const fileInput = document.getElementById("fileInput");
+        document.getElementById("uploadBtn").addEventListener("click", () => fileInput.click());
+        fileInput.addEventListener("change", () => {
+            const f = fileInput.files && fileInput.files[0];
+            fileInput.value = "";
+            if (f) handleFile(f);
+        });
+
+        document.getElementById("dropConfirm").addEventListener("click", () => {
+            if (pendingText) loadText(pendingText.text, pendingText.name);
+            closeDropModal();
+        });
+        document.getElementById("dropCancel").addEventListener("click", closeDropModal);
+        dropModal.addEventListener("click", (e) => { if (e.target === dropModal) closeDropModal(); });
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dropModal.classList.contains("show")) closeDropModal(); });
+
+        let scale = 1;
+        let panX = 0;
+        let panY = 0;
+        let isDragging = false;
+        let startX, startY;
+
+        function updateTransform() {
+            preview.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+            zoomLabel.innerText = Math.round(scale * 100) + '%';
+            zoomSlider.style.setProperty('--p', ((scale - 0.1) / 4.9 * 100) + '%');
+        }
+
+        function resetView() {
+            scale = 1; panX = 0; panY = 0;
+            zoomSlider.value = 1;
+            updateTransform();
+        }
+
+        zoomSlider.addEventListener('input', (e) => {
+            scale = parseFloat(e.target.value);
+            updateTransform();
+        });
+
+        canvas.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const zoomAmount = -e.deltaY * 0.001;
+            scale = Math.min(Math.max(0.1, scale + zoomAmount), 5);
+            zoomSlider.value = scale;
+            updateTransform();
+        }, { passive: false });
+
+        canvas.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX - panX;
+            startY = e.clientY - panY;
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            panX = e.clientX - startX;
+            panY = e.clientY - startY;
+            updateTransform();
+        });
+
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        function removeHardCodedColors() {
+            let svg = editor.getValue();
+            if (!svg) return;
+            const colorRegex = /(fill|stroke)=["'](#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})|rgba?\([^)]+\))["']/gi;
+            const styleColorRegex = /(fill|stroke):\s*(#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})|rgba?\([^)]+\))/gi;
+            let newSvg = svg.replace(colorRegex, '$1="currentColor"');
+            newSvg = newSvg.replace(styleColorRegex, '$1: currentColor');
+            if (svg !== newSvg) {
+                editor.setValue(newSvg);
+                updatePreview();
+                showToast("Colors updated");
+            } else {
+                showToast("No colors found");
+            }
+        }
+
+        function flipSvg(direction) {
+            let svgText = editor.getValue();
+            if (!svgText) return;
+
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(svgText, "image/svg+xml");
+
+            if (doc.querySelector("parsererror")) {
+                showToast("Invalid SVG");
+                return;
+            }
+
+            const svg = doc.querySelector("svg");
+            if (!svg) {
+                showToast("No SVG found");
+                return;
+            }
+
+            // Get dimensions from viewBox or width/height attributes
+            let width, height;
+            if (svg.hasAttribute("viewBox")) {
+                const vb = svg.getAttribute("viewBox").trim().split(/[\s,]+/);
+                width = parseFloat(vb[2]);
+                height = parseFloat(vb[3]);
+            } else {
+                width = parseFloat(svg.getAttribute("width")) || 100;
+                height = parseFloat(svg.getAttribute("height")) || 100;
+            }
+
+            // Wrap all children in a <g> with the flip transform
+            const wrapper = doc.createElementNS("http://www.w3.org/2000/svg", "g");
+            while (svg.firstChild) {
+                wrapper.appendChild(svg.firstChild);
+            }
+
+            const transform = direction === "horizontal"
+                ? `translate(${width},0) scale(-1,1)`
+                : `translate(0,${height}) scale(1,-1)`;
+
+            wrapper.setAttribute("transform", transform);
+            svg.appendChild(wrapper);
+
+            const result = new XMLSerializer().serializeToString(doc);
+            editor.setValue(result);
+            updatePreview();
+            showToast(direction === "horizontal" ? "Flipped horizontally" : "Flipped vertically");
+        }
+
+        function simplifySvg() {
+            let svg = editor.getValue();
+            if (!svg) return;
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(svg, "image/svg+xml");
+            if (doc.querySelector("parsererror")) {
+                showToast("Invalid SVG");
+                return;
+            }
+            const metadata = doc.querySelectorAll('metadata, desc, title, sodipodi\\:namedview, comment');
+            metadata.forEach(el => el.remove());
+            let cleanSvg = new XMLSerializer().serializeToString(doc);
+            cleanSvg = cleanSvg.replace(/(\d+\.\d{3})\d+/g, '$1');
+            cleanSvg = cleanSvg.replace(/>\s+</g, '><').trim();
+            editor.setValue(cleanSvg);
+            updatePreview();
+            showToast("Simplified");
+        }
+
+        function copyToClipboard() {
+            const val = editor.getValue();
+            if (!val) return;
+            const textarea = document.createElement("textarea");
+            textarea.value = val;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            showToast("Copied!");
+        }
+
+        function downloadSvg() {
+            const val = editor.getValue();
+            if (!val.trim()) { showToast("Nothing to export"); return; }
+            const res = resolveSvg(val.trim());
+            if (!res.el) { showToast("This XML can't be converted to SVG"); return; }
+            // plain SVG is saved exactly as typed; engine-rendered XML is saved as its converted SVG
+            const out = res.kind === "svg" ? val : new XMLSerializer().serializeToString(res.el);
+            saveBlob(new Blob([out], { type: "image/svg+xml;charset=utf-8" }), "studio_export.svg");
+            showToast(res.kind === "svg" ? "SVG downloaded" : "Converted to SVG and downloaded");
+        }
+
+        let toastTimer;
+        function showToast(msg) {
+            toast.innerText = msg;
+            toast.classList.add("show-toast");
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove("show-toast"), 2000);
+        }
+
+        toggleBg.addEventListener("click", () => {
+            isTransparent = !isTransparent;
+            applyTheme();
+        });
+
+        /* ---------- Material ripple ---------- */
+        document.addEventListener("pointerdown", (e) => {
+            const target = e.target.closest(".btn, .icon-btn, .chip");
+            if (!target) return;
+            const rect = target.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height) * 2;
+            const r = document.createElement("span");
+            r.className = "ripple";
+            r.style.width = r.style.height = size + "px";
+            r.style.left = (e.clientX - rect.left - size / 2) + "px";
+            r.style.top = (e.clientY - rect.top - size / 2) + "px";
+            target.appendChild(r);
+            setTimeout(() => r.remove(), 600);
+        });
+
+        window.onload = () => {
+            applyTheme();
+            syncWrapUi();
+            editor.setValue('');
+            updatePreview();
+            resetView();
+            if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => editor.refresh());
+        };
+    </script>
+</body>
+</html>
